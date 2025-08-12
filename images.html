@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <img id="slider" src="im1.jpg" width="100%">
+
+    <script>
+        let images=["im1.jpg" , "IM2.jpg", "IM4.jpg","a.jpg" ,"b.jpg" ,"c.jpg" ,"d.jpg" ,"img5.jpg" ,"img6.jpg" ,"img7.jpg" ,"img8.jpg" ,"img9.jpg"];
+        let i=0;
+        setInterval(function(){
+            i=(i+1)% images.length;
+            document.getElementById("slider").src=images[i];
+        },2000);
+    </script>
+</body>
+</html>
